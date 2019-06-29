@@ -14,6 +14,6 @@ class QuotesSpider(scrapy.Spider):
                 'author': quote.xpath('span/small/text()').get(),
             }
 
-        next_page = response.css('//li[contains(@class, "next")]/a/@href').get()
+        next_page = response.xpath('//li[contains(@class, "next")]/a/@href').get()
         if next_page is not None:
             yield response.follow(next_page, self.parse)
