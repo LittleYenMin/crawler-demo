@@ -9,7 +9,11 @@ pre-requirement
 ```
 python 3.5+
 ```
-install dependency.
+clone this project
+```shell
+git clone https://github.com/LittleYenMin/Crawler-demo.git
+```
+Install dependency.
 ```
 pip3 install -r requirements.txt
 ```
